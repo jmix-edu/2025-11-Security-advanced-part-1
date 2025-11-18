@@ -34,8 +34,8 @@ public interface ProjectManagementRole {
     @MenuPolicy(menuIds = {"Project.list", "Task_.list", "Document.list", "User.list", "MyNotifications", "TimeEntry.list"})
     void commonMenus();
 
-    @EntityAttributePolicy(entityClass = Notification.class, attributes = "*", action = EntityAttributePolicyAction.VIEW)
     @EntityPolicy(entityClass = Notification.class, actions = EntityPolicyAction.READ)
+    @EntityAttributePolicy(entityClass = Notification.class, attributes = "*", action = EntityAttributePolicyAction.VIEW)
     void notification();
 
     @EntityAttributePolicy(entityClass = TimeEntry.class, attributes = "*", action = EntityAttributePolicyAction.MODIFY)
