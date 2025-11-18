@@ -64,6 +64,8 @@
                 <column property="email"/>
                 <column property="timeZoneId"/>
                 <column property="active"/>
+                <column property="needsActivation"/>
+                <column property="activationToken"/>
             </columns>
         </dataGrid>
         <hbox id="lookupActions" visible="false">
