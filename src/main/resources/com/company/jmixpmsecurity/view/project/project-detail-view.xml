@@ -32,6 +32,10 @@
                 </actions>
             </entityPicker>
             <checkbox id="archivedField" property="archived"/>
+            <textField id="createdByField" property="createdBy" readOnly="true"/>
+            <dateTimePicker id="createdDateField" property="createdDate" readOnly="true"/>
+            <textField id="lastModifiedByField" property="lastModifiedBy"/>
+            <dateTimePicker id="lastModifiedDateField" property="lastModifiedDate"/>
         </formLayout>
         <h4 text="msg://com.company.jmixpm.entity/Project.tasks"/>
         <hbox id="buttonsPanel" classNames="buttons-panel">

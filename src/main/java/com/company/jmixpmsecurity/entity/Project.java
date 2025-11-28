@@ -8,6 +8,8 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedBy;
+import org.springframework.data.annotation.LastModifiedDate;
 
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
@@ -55,6 +57,52 @@ public class Project {
     @CreatedDate
     @Column(name = "CREATED_DATE")
     private OffsetDateTime createdDate;
+
+    @LastModifiedBy
+    @Column(name = "LAST_MODIFIED_BY")
+    private String lastModifiedBy;
+
+    @LastModifiedDate
+    @Column(name = "LAST_MODIFIED_DATE")
+    private OffsetDateTime lastModifiedDate;
+
+    @Column(name = "NEW_ATTR")
+    private Short newAttr;
+
+    @Column(name = "SEC_ATTR")
+    private String secAttr;
+
+    public String getSecAttr() {
+        return secAttr;
+    }
+
+    public void setSecAttr(String secAttr) {
+        this.secAttr = secAttr;
+    }
+
+    public Short getNewAttr() {
+        return newAttr;
+    }
+
+    public void setNewAttr(Short newAttr) {
+        this.newAttr = newAttr;
+    }
+
+    public OffsetDateTime getLastModifiedDate() {
+        return lastModifiedDate;
+    }
+
+    public void setLastModifiedDate(OffsetDateTime lastModifiedDate) {
+        this.lastModifiedDate = lastModifiedDate;
+    }
+
+    public String getLastModifiedBy() {
+        return lastModifiedBy;
+    }
+
+    public void setLastModifiedBy(String lastModifiedBy) {
+        this.lastModifiedBy = lastModifiedBy;
+    }
 
     public OffsetDateTime getCreatedDate() {
         return createdDate;

@@ -22,6 +22,8 @@ repositories {
 }
 
 dependencies {
+    implementation 'io.jmix.ldap:jmix-ldap-starter'
+
     implementation 'io.jmix.audit:jmix-audit-flowui-starter'
     implementation 'io.jmix.audit:jmix-audit-starter'
 

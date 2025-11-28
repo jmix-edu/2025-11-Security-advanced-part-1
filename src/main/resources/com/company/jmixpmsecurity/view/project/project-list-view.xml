@@ -56,6 +56,13 @@
                 <column property="endDate"/>
                 <column property="manager"/>
                 <column property="archived"/>
+                <column property="createdBy"/>
+                <editorActionsColumn>
+                    <editButton text="msg:///actions.Edit"/>
+                    <cancelButton text="msg:///actions.Cancel"/>
+                </editorActionsColumn>
+                <column property="lastModifiedBy"/>
+                <column property="lastModifiedDate"/>
             </columns>
         </dataGrid>
         <hbox id="lookupActions" visible="false">
